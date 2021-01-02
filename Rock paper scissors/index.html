@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h1">Rock Paper Sissors</div>
+    </header>
+    <main>
+        <div class="score">
+            <span id="user">0</span>
+            : <span id="bot">0</span>
+        </div>
+        <div class="choice">Make your move</div>
+        <div class="container">
+            <div class="tab rock" onclick="game('rock')">
+                <span>✊🏻</span>
+                <span class="name">Rock</span>
+            </div>
+            <div class="tab paper" onclick="game('paper')">
+                <span>🖐🏻</span>
+                <span class="name">Paper</span>
+            </div>
+            <div class="tab scissors" onclick="game('scissors')">
+                <span>✌🏻</span>
+                <span class="name">Scissors</span>
+            </div>
+        </div>
+        <div class="logger" id="logger">
+            <div>Logger</div>
+            <hr>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #1c212b;
+  color: goldenrod;
+  font-family: "Nerko One", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: 2em;
+  margin: 7px 0 2rem 0;
+}
+
+header {
+  text-align: center;
+}
+
+.score {
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+  cursor: default;
+  width: 10rem;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.choice {
+  text-align: center;
+  font-size: 1.56em;
+  margin: 0px 0px 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: auto;
+  user-select: none;
+}
+
+.tab {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+.name{
+  position: relative;
+  bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* .rock {
+  background-image: url("./assets/rock.png");
+  background-size: cover;
+}
+
+.paper {
+  background-image: url("./assets/paper.png");
+  background-size: cover;
+}
+
+.scissors {
+  background-image: url("./assets/scissors.png");
+  background-size: cover;
+} */
+
+.logger {
+  width: 55rem;
+  height: 14rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: #427790;
+  color: rgba(0, 0, 0, 0.78);
+  font-size: 2rem;
+  font-weight: bold;
+  overflow-y: auto;
+}
+
+.messege {
+  margin: 6px;
+}
