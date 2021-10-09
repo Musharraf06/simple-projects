@@ -141,9 +141,10 @@ function display() {
 }
 
 $(document).ready(function () {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  $('.calculator').css('background', `#${randomColor}`);
   $(document).keydown(function (event) {
     var key = event.keyCode ? event.keyCode : event.which;
-	console.log('key: ', key);
     if (typeof buttonMapping[key] === 'function') buttonMapping[key]();
     display();
   });
