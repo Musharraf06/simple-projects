@@ -3,18 +3,23 @@
   width: 17rem;
   height: 12rem;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clinic:hover {
+  transform: scale(1.1);
 }
 
 .clinic-1 {
-  background-image: url("../assets/doctor-checking-for-healthcare-in-clinic-vector-flat-illustration.jpg");
+  background-image: url('../assets/doctor-checking-for-healthcare-in-clinic-vector-flat-illustration.jpg');
   background-size: cover;
 }
 .clinic-2 {
-  background-image: url("../assets/healthcare-checkup-by-doctor-at-lab-clinic-vector-illustration.png");
+  background-image: url('../assets/healthcare-checkup-by-doctor-at-lab-clinic-vector-illustration.png');
   background-size: cover;
 }
 .clinic-3 {
-  background-image: url("../assets/healthcare-clinic-vector-flat-illustration.jpg");
+  background-image: url('../assets/healthcare-clinic-vector-flat-illustration.jpg');
   background-size: cover;
 }
 
@@ -32,6 +37,8 @@
 .modal {
   margin: 3rem 0 0 0;
   padding: 1rem;
+  position: relative;
+  animation: move-ltr 0.5s;
 }
 
 .address {
@@ -55,4 +62,22 @@
   font-size: 2rem;
   right: 1rem;
   cursor: pointer;
+}
+
+@keyframes move-ltr {
+  0% {
+    right: 100%;
+  }
+  25% {
+    right: 75%;
+  }
+  50% {
+    right: 50%;
+  }
+  75% {
+    right: 25%;
+  }
+  100% {
+    right: 0%;
+  }
 }
