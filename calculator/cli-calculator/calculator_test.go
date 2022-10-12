@@ -35,3 +35,19 @@ func TestDivision(t *testing.T) {
 		t.Errorf("%d was expect but got %d .\n", exp, res)
 	}
 }
+
+func TestRemainder(t *testing.T) {
+	exp := 0
+	res := remainder(6, 3)
+	if res != float64(exp) {
+		t.Errorf("%d was expect but got %d .\n", exp, int(res))
+	}
+}
+
+func TestPowerOf(t *testing.T) {
+	exp := 216
+	res := power_of(6, 3)
+	if res != float64(exp) {
+		t.Errorf("%d was expect but got %d .\n", exp, int(res))
+	}
+}
