@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Markdown Previewer</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header></header>
     <main>
-        <div>
-            <textarea name="markdown" class="markdown"></textarea>
+      <div class="containers">
+        <div class="container">
+          <textarea
+            name="markdown"
+            class="markdown"
+            onchange="update_previewer()"
+          ></textarea>
         </div>
-        <div class="preview"></div>
-        <button onclick="update_previewer()">Preview</button>
+        <div class="container">
+          <div class="preview"></div>
+        </div>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>
