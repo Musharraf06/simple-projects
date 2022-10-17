@@ -13,10 +13,14 @@
     <main>
       <div class="containers">
         <div class="container">
+          <div class="file_wrapper">
+            <input type="file" class="md_file_selecter" accept=".md" />
+            <button onclick="load_md_file()">Load</button>
+          </div>
           <textarea
             name="markdown"
             class="markdown"
-            onchange="update_previewer()"
+            onchange="update_previewer(this.value)"
           ></textarea>
         </div>
         <div class="container">
